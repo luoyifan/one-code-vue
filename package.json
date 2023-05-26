@@ -1,0 +1,46 @@
+{
+  "name": "one-code-vue",
+  "version": "0.1.11",
+  "description": "one-code for vue3 development platformSuppas.",
+  "main": "dist/one-code-vue.mjs",
+  "module": "dist/one-code-vue.mjs",
+  "typings": "dts/index.d.ts",
+  "private": false,
+  "scripts": {
+    "init": "yarn && yarn link",
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "doc": "vuepress dev docs",
+    "doc:build": "vuepress build docs",
+    "tsd": "vue-tsc --declaration --emitDeclarationOnly",
+    "clean": "rimraf dist/"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@vicons/fa": "^0.12.0",
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21",
+    "element-plus": "^2.3.5",
+    "tokenize-this": "^1.0.0",
+    "localforage": "^1.10.0",
+    "vite": "^4.3.9",
+    "@vitejs/plugin-vue": "^1.6.2",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vite-plugin-html": "^3.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.25.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "vue": "^3.3.0-beta.5",
+    "vuepress": "2.0.0-beta.49",
+    "vuepress-plugin-demo-block-vue3": "^1.0.0",
+    "typescript": "^4.6.4",
+    "vue-tsc": "^0.40.4",
+    "rimraf": "^3.0.2",
+    "json5": "^2.2.0"
+  },
+  "dependencies": {
+
+  }
+}
