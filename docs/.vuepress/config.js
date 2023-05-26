@@ -6,12 +6,19 @@ module.exports = {
     description: "简化开发与交付，一码成就",
     port: 9988,
     locales: {
-        "/": {
-            lang: "zh-CN",
+        '/': {
+            lang: 'zh-CN',
+            title: '一码平台',
+            description: "简化开发与交付，一码成就",
         },
+        '/en/': {
+            lang: 'en-US',
+            title: ' ',
+            description: "Simplify development and delivery",
+        }
     },
     head: [
-        ["link",{ rel: "icon",href: "/assets/logo.png" }]
+        ["link", {rel: "icon", href: "/assets/logo.png"}]
     ],
     bundler: viteBundler({}),
     theme: defaultTheme({
@@ -38,42 +45,6 @@ module.exports = {
                 "/guide/": require("../guide/index"),
                 "/components/": require("../components/index"),
             }
-        // navbar: [
-        //   {
-        //     text: "首页",
-        //     link: "/",
-        //   },
-        //   {
-        //     text: "指南",
-        //     children: [
-        //       "/guide/get-started.md",
-        //       "/guide/install.md",
-        //       "/guide/demo.md",
-        //     ],
-        //   },
-        //   {
-        //     text: "GitHub",
-        //     link: "https://github.com/seepine/vuepress-plugin-demo-block-vue3.git",
-        //   },
-        // ],
-        // sidebar: {
-        //   "/guide/": [
-        //     {
-        //       text: "指南",
-        //       isGroup: true,
-        //       children: [
-        //         {
-        //           text: "介绍",
-        //           children: [
-        //             "/guide/get-started.md",
-        //             "/guide/install.md",
-        //             "/guide/demo.md",
-        //           ],
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
     }),
     plugins: [
         [

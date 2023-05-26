@@ -7,6 +7,28 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.21.9.tgz#ab18ea3b85b4bc33ba98a8d4c2032c557d23cf14"
   integrity sha512-q5PNg/Bi1OpGgx5jYlvWZwAorZepEudDMCLtj967aeS7WMont7dUZI46M2XwcIQqvUlMxWfdLFu4S/qSxeUu5g==
 
+"@brillout/import@0.2.3", "@brillout/import@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@brillout/import/-/import-0.2.3.tgz#98f04656692b35d70664cc917f3cb0e8f74942dd"
+  integrity sha512-1T8WlD75eeFSMrptGy8jiLHmfHgMmSjWvLOIUvHmSVZt+6k0eQqYUoK4KbmE4T9pVLIfxvZSOm2D68VEqKRHRw==
+
+"@brillout/json-serializer@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@brillout/json-serializer/-/json-serializer-0.5.3.tgz#3bce6e7560e7e9b6a89a915c26df3b49c347fbcc"
+  integrity sha512-IxlOMD5gOM0WfFGdeR98jHKiC82Ad1tUnSjvLS5jnRkfMEKBI+YzHA32Umw8W3Ccp5N4fNEX229BW6RaRpxRWQ==
+
+"@brillout/picocolors@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@brillout/picocolors/-/picocolors-1.0.4.tgz#e7f64ff2756be519c668246aabc69c73af687212"
+  integrity sha512-rhZBVyrRCb53T9xIGoEjZQ6O4Um3XQWcQ1z2VL2eBQBtJYCsABUUNE/isqbnts3XD1sAkisDF2L3OjJeIgrznQ==
+
+"@brillout/vite-plugin-import-build@^0.2.16":
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/@brillout/vite-plugin-import-build/-/vite-plugin-import-build-0.2.16.tgz#7e7a89c623d373f91ccb550c9e97c0646e898530"
+  integrity sha512-3rbNIgOUIPf8JrV3lozG3lpIe+xnujUANpMaf9aPVGnZV5SVKOSrvLk83+2Y8/nhHgLYTBplNZTW3DTD6J29ag==
+  dependencies:
+    "@brillout/import" "^0.2.3"
+
 "@ctrl/tinycolor@^3.4.1":
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.6.0.tgz#53fa5fe9c34faee89469e48f91d51a3766108bc8"
@@ -280,6 +302,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@polka/url@^1.0.0-next.20":
+  version "1.0.0-next.21"
+  resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
+  integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
 "@popperjs/core@npm:@sxzz/popperjs-es@^2.11.7":
   version "2.11.7"
@@ -824,7 +851,7 @@
   dependencies:
     vue-demi "*"
 
-acorn@^8.5.0:
+acorn@^8.5.0, acorn@^8.8.2:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
   integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
@@ -975,7 +1002,7 @@ buffer@^5.5.0:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
 
-cac@^6.7.12:
+cac@^6.7.12, cac@^6.7.14:
   version "6.7.14"
   resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.14.tgz#804e1e6f506ee363cb0e3ccbb09cad5dd9870959"
   integrity sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==
@@ -1256,6 +1283,11 @@ envinfo@^7.8.1:
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.8.1.tgz#06377e3e5f4d379fea7ac592d5ad8927e0c4d475"
   integrity sha512-/o+BXHmB7ocbHEAs6F2EnG0ogybVVUdkRunTT2glZU9XAaGmhqskrvKwqXuDfNjEO0LZKWdejEEpnq8aM0tOaw==
 
+es-module-lexer@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.10.5.tgz#06f76d51fa53b1f78e3bd8bb36dd275eda2fdd53"
+  integrity sha512-+7IwY/kiGAacQfY+YBhKMvEmyAJnw5grTUgjG85Pe7vcUI/6b7pZjZG8nQ7+48YhzEAEqrEgD2dCz/JIK+AYvw==
+
 esbuild-android-64@0.14.54:
   version "0.14.54"
   resolved "https://registry.yarnpkg.com/esbuild-android-64/-/esbuild-android-64-0.14.54.tgz#505f41832884313bbaffb27704b8bcaa2d8616be"
@@ -1383,7 +1415,7 @@ esbuild@^0.14.27, esbuild@^0.14.49:
     esbuild-windows-64 "0.14.54"
     esbuild-windows-arm64 "0.14.54"
 
-esbuild@^0.17.5:
+esbuild@^0.17.18, esbuild@^0.17.5:
   version "0.17.19"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.19.tgz#087a727e98299f0462a3d0bcdd9cd7ff100bd955"
   integrity sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw==
@@ -1463,7 +1495,7 @@ extend-shallow@^2.0.1:
   dependencies:
     is-extendable "^0.1.0"
 
-fast-glob@^3.2.11, fast-glob@^3.2.9:
+fast-glob@^3.2.11, fast-glob@^3.2.12, fast-glob@^3.2.9:
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
   integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
@@ -1957,6 +1989,11 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
+mrmime@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mrmime/-/mrmime-1.0.1.tgz#5f90c825fad4bdd41dc914eff5d1a8cfdaf24f27"
+  integrity sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==
+
 ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
@@ -2321,6 +2358,15 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
+sirv@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/sirv/-/sirv-2.0.3.tgz#ca5868b87205a74bef62a469ed0296abceccd446"
+  integrity sha512-O9jm9BsID1P+0HOi81VpXPoDxYP374pkOLzACAoyUQ/3OUVndNpsz6wMnY2z+yOxzbllCKZrM+9QrWsv4THnyA==
+  dependencies:
+    "@polka/url" "^1.0.0-next.20"
+    mrmime "^1.0.0"
+    totalist "^3.0.0"
+
 slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
@@ -2407,6 +2453,11 @@ tokenize-this@^1.0.0:
   resolved "https://registry.yarnpkg.com/tokenize-this/-/tokenize-this-1.4.2.tgz#ca35a2214f5ffcb0a5101294983ff47c54cee125"
   integrity sha512-WDOMkXmAyHC7VHpVWbyUe98wHspF2TqnqCBa9caTz0fRRaKlWWgZ50LBHpmCfhkCnh1ynyhorxpejBTzawo2IA==
 
+totalist@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/totalist/-/totalist-3.0.1.tgz#ba3a3d600c915b1a97872348f79c127475f6acf8"
+  integrity sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==
+
 ts-debounce@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/ts-debounce/-/ts-debounce-4.0.0.tgz#33440ef64fab53793c3d546a8ca6ae539ec15841"
@@ -2491,6 +2542,22 @@ vite-plugin-monaco-editor@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vite-plugin-monaco-editor/-/vite-plugin-monaco-editor-1.1.0.tgz#a6238c2e13d5e98dd54a1bc51f6f189325219de3"
   integrity sha512-IvtUqZotrRoVqwT0PBBDIZPNraya3BxN/bfcNfnxZ5rkJiGcNtO5eAOWWSgT7zullIAEqQwxMU83yL9J5k7gww==
+
+vite-plugin-ssr@^0.4.130:
+  version "0.4.130"
+  resolved "https://registry.yarnpkg.com/vite-plugin-ssr/-/vite-plugin-ssr-0.4.130.tgz#487465f710a9f83a1bdcc27fe39a91049112b5d8"
+  integrity sha512-EYyTeOviS6P7bFod1FxV+mglRckEh+jWdFYMMnoT7zz2MQyCSQQs/mZ/EXPyeqPY4PwvwAY3MzPbb0bPdUA+PA==
+  dependencies:
+    "@brillout/import" "0.2.3"
+    "@brillout/json-serializer" "^0.5.3"
+    "@brillout/picocolors" "^1.0.4"
+    "@brillout/vite-plugin-import-build" "^0.2.16"
+    acorn "^8.8.2"
+    cac "^6.7.14"
+    es-module-lexer "^0.10.5"
+    esbuild "^0.17.18"
+    fast-glob "^3.2.12"
+    sirv "^2.0.2"
 
 vite@^4.3.9:
   version "4.3.9"

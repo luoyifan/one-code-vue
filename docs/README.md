@@ -3,14 +3,14 @@ home: true
 navbar: true
 heroImage: /assets/logo.png
 actions:
-  - text: 开始使用 →
+  - text: 开始 →
     link: /guide/
     type: primary
 features:
   - title: 主流技术
     details: 基于Java SpringBoot / Vue3，能够完全兼容复杂个性化的企业应用，同时能够大大简化开发过程，让您的项目更加高效和准确
-  - title: CodeFirst
-    details: 代码优先模式，优先提高程序员对项目的掌控力，一切数据库设计、实体设计、界面、前后端逻辑、系统参数、客户自定义配置都以代码模式优先描述，前后端代码都带代码提示，并且可以进行debug
+  - title: 代码优先
+    details: 优先提高程序员对项目的掌控力，一切数据库设计、实体设计、界面、前后端逻辑、系统参数、客户自定义配置都以代码模式优先描述，前后端代码都带代码提示，并且可以进行debug
   - title: 低代码
     details: 支持界面的拖拉拽、后端服务快速定义、图形化流程定义、图形化数据模型定义、图形化打印报表设计、接口定义
 # - title: 友好协作
