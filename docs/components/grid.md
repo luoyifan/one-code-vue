@@ -28,3 +28,6 @@ xtype: ezgrid
 <yv-vjson-div :vjson="{ text: 'abcdefgh'}" />
 
 ### demo
+<ClientOnly>
+    <yv-vjson-aggrid :vjson="{}" />
+</ClientOnly>

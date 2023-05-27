@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 // @ts-ignore
 import json from '@rollup/plugin-json'
 // @ts-ignore
-import typescript from 'rollup-plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 // import monacoEditorPlugin from 'vite-plugin-monaco-editor';
 
@@ -44,8 +44,10 @@ export default defineConfig({
             formats: ['es'],
             fileName: "one-code-vue",
         },
-        rollupOptions: {
+        commonjsOptions:{
 
+        },
+        rollupOptions: {
             output: {
                 name: "one-code-vue",
                 exports: 'named',
@@ -57,8 +59,8 @@ export default defineConfig({
                 'vue',
                 'lodash',
                 'element-plus',
-                "handsontable",
-                "@handsontable",
+                // "ag-grid-community",
+                // "ag-grid-vue3",
                 'localforage',
                 'json5',
                 "monaco-editor",
