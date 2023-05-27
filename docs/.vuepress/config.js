@@ -1,6 +1,11 @@
-const blockDemo = require("./../../src/docsutil");
-const {defaultTheme} = require("@vuepress/theme-default");
-const {viteBundler} = require("@vuepress/bundler-vite");
+// const blockDemo = require("./../../src/docsutil");
+// const {defaultTheme} = require("@vuepress/theme-default");
+// const {viteBundler} = require("@vuepress/bundler-vite");
+
+import blockDemo from "./../../src/docsutil";
+import {defaultTheme} from "@vuepress/theme-default";
+import {viteBundler} from "@vuepress/bundler-vite";
+
 module.exports = {
     title: "一码平台",
     description: "简化开发与交付，一码成就",

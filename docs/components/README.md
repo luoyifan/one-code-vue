@@ -36,9 +36,4 @@ console.log('你好，VuePress！')
 
 ::: v-pre
 `{{ This will be displayed as-is }}`
-<div>
-    <demo-1 />
-    <button>按钮</button>
-    <OtherComponent msg="abc"></OtherComponent>
-</div>
 :::

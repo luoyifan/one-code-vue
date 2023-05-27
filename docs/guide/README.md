@@ -5,9 +5,11 @@ one-code-vue 是一个前后端一体的开发平台，他能够以拖拉拽的�
 
 ## Markdown 编写示例
 <!--这是 vue 代码-->
+<ClientOnly>
 <div>
     <yv-vjson-button :vjson="{text:'这是通过OneCodeVue加载出来的按钮'}" />
 </div>
+</ClientOnly>
 
 ### Vue代码块
 ```vue

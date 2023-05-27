@@ -1,18 +1,16 @@
-/*
- * @Author: 曹捷
- * @Date: 2022-01-20 19:11:57
- * @LastEditors: 曹捷
- * @LastEditTime: 2022-01-20 19:15:19
- * @Description: fileContent
- */
 // ref https://github.com/vuejs/vitepress/blob/main/src/node/markdown/plugins/highlight.ts
-const escapeHtml = require("escape-html");
-const prism = require("prismjs");
-const chalk = require("chalk");
+import escapeHtml from "escape-html";
+import prism from "prismjs";
+import chalk from "chalk";
+import loadLanguages from "prismjs/components/index.js";
+
+// const escapeHtml = require("escape-html");
+// const prism = require("prismjs");
+// const chalk = require("chalk");
 
 // prism is listed as actual dep so it's ok to require
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const loadLanguages = require("prismjs/components/index");
+// const loadLanguages = require("prismjs/components/index");
 
 // required to make embedded highlighting work...
 loadLanguages(["markup", "css", "javascript"]);
@@ -24,7 +22,7 @@ function wrap(code, lang) {
   return `<pre v-pre><code>${code}</code></pre>`;
 }
 
-module.exports = (str, lang) => {
+export default (str, lang) => {
   if (!lang) {
     return wrap(str, "text");
   }

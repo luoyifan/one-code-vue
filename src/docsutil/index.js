@@ -1,17 +1,17 @@
-/*
- * @Author: 曹捷
- * @Date: 2021-11-11 17:29:49
- * @LastEditors: seepine
- * @LastEditTime: 2022-07-17 21:13:44
- * @Description: fileContent
- */
 /**
  * 提供 ::: demo xxx ::: 语法，用于构建 markdown 中的示例
  */
-const demoBlockContainers = require("./common/containers");
-const { hash, path } = require("@vuepress/utils");
-const prepareClientAppEnhanceFile = require("./prepareClientAppEnhanceFile");
-const chokidar = require("chokidar");
+// 改写成 import
+// const demoBlockContainers = require("./common/containers");
+// const { hash, path } = require("@vuepress/utils");
+// const prepareClientAppEnhanceFile = require("./prepareClientAppEnhanceFile");
+// const chokidar = require("chokidar");
+
+import demoBlockContainers from "./common/containers";
+import { hash, path } from "@vuepress/utils";
+import prepareClientAppEnhanceFile from "./prepareClientAppEnhanceFile";
+import chokidar from "chokidar";
+
 module.exports = (options = {}) => {
   return (app) => {
     if (!options.path) {

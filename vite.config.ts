@@ -4,10 +4,12 @@ import vue from '@vitejs/plugin-vue';
 import json from '@rollup/plugin-json'
 // @ts-ignore
 import typescript from 'rollup-plugin-typescript';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 // import monacoEditorPlugin from 'vite-plugin-monaco-editor';
 
 export default defineConfig({
     plugins: [
+        vueJsx(),
         vue(),
     ],
     // server: {
@@ -23,6 +25,11 @@ export default defineConfig({
             },
         },
         devSourcemap: true,
+    },
+    esbuild: {
+        jsxFactory: 'h',
+        jsxFragment: 'Fragment',
+        jsxInject: "import { h } from 'vue';"
     },
     build: {
         target: 'modules',
@@ -50,9 +57,12 @@ export default defineConfig({
                 'vue',
                 'lodash',
                 'element-plus',
+                "handsontable",
+                "@handsontable",
                 'localforage',
                 'json5',
                 "monaco-editor",
+                "resize-observer-polyfill",
                 "monaco-editor/esm/vs/basic-languages/sql/sql.js",
                 // "monaco-editor/esm/vs/editor/contrib/find/findController",
                 // "monaco-editor/esm/vs/editor/contrib/hover/hover"

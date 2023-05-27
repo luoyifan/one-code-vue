@@ -1,5 +1,5 @@
 ## 项目名称
-wms后端服务
+one-code-vue 一码平台Vue版
 
 ## 运行条件
 * nodejs: 16+
@@ -12,10 +12,10 @@ wms后端服务
 ## 运行说明
 #### clone 代码
 ```shell
-git clone https://codeup.aliyun.com/63f4759fb67d6230f23b9739/wms/wms.git
-cd wms
-git clone https://codeup.aliyun.com/63f4759fb67d6230f23b9739/wms/wms-ui-pc.git
-git clone https://codeup.aliyun.com/63f4759fb67d6230f23b9739/wms/wms-ui-mobile.git
+git clone .../one-code-vue.git
+
+yarn init
+yarn dev
 ```
 
 #### 项目文件结构
@@ -66,3 +66,4 @@ one-code-vue
 - 罗一帆 yvan
 - 李志伟
 - 余亮
+- 刘鹏

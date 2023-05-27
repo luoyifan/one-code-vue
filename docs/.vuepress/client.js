@@ -1,5 +1,6 @@
 import { defineClientConfig } from "@vuepress/client";
 
+// import * as OneCodeVue from '../../src'
 import * as OneCodeVue from '../../dist/one-code-vue.mjs'
 import '../../dist/style.css'
 

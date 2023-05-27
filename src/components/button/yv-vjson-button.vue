@@ -50,6 +50,9 @@ export default {
       this.runEvent('click', ...arguments)
       // getListener(this.vjson, 'click', this.vcxt)(this, this.vcxt.scope)
       system.globalLoadingButtonInstance = null
+    },
+    performClick(){
+      this._onClick()
     }
   }
 }

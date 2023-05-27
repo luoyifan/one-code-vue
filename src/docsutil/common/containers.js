@@ -1,16 +1,15 @@
-/*
- * @Author: 曹捷
- * @Date: 2021-11-11 17:29:49
- * @LastEditors: 曹捷
- * @LastEditTime: 2022-01-20 21:20:39
- * @Description: fileContent
- */
-let mdContainer = require("markdown-it-container");
-const MarkdownIt = require("markdown-it");
+import mdContainer from "markdown-it-container";
+import MarkdownIt from "markdown-it";
+import fs from "fs";
+import path from "path";
+import highlight from "./highlight";
+
+// let mdContainer = require("markdown-it-container");
+// const MarkdownIt = require("markdown-it");
 const localMd = MarkdownIt();
-const fs = require("fs");
-const path = require("path");
-const highlight = require("./highlight");
+// const fs = require("fs");
+// const path = require("path");
+// const highlight = require("./highlight");
 
 module.exports = (options) => {
   const { component = "demo-block", componentsDir, getComponentName } = options;

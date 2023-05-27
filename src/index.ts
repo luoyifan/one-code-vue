@@ -5,7 +5,7 @@ import './main.css'
 
 export * from './components'
 
-window['system'] = new System();
+// window['system'] = new System();
 
 export {
     System,
